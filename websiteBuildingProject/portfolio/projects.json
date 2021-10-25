@@ -61,7 +61,7 @@
     },
     {
         "name": "Coffee Shop",
-        "img": "projectsScreenshots/coffeeWebsite.png",
-        "link": "../coffee/index.html"
+        "img": "projectsScreenshots/coffeeWebsite.PNG",
+        "link": "../Coffee/index.html"
     }
 ]
