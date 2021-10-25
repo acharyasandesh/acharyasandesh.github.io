@@ -1,0 +1,67 @@
+[
+    {
+        "name": "menu",
+        "img": "projectsScreenshots/menuPage.png",
+        "link": "../menu/index.html"
+    },
+    {
+        "name": "nav1",
+        "img": "projectsScreenshots/nav1.png" ,
+        "link": "../nav1/index.html"
+    },
+    {
+        "name": "nav2",
+        "img": "projectsScreenshots/nav2.png",
+        "link": "../nav2/index.html"
+    },
+    {
+        "name": "nav3",
+        "img": "projectsScreenshots/nav3.png",
+        "link": "../nav3/index.html"
+    },
+    {
+        "name": "nav4",
+        "img": "projectsScreenshots/nav4.png",
+        "link": "../nav4/index.html"
+    },
+    {
+        "name": "color flipper",
+        "img": "projectsScreenshots/colorFlipper.png",
+        "link": "../colorFlipper/index.html"
+    },
+    {
+        "name": "IWD first year project",
+        "img": "projectsScreenshots/firstYearProject.png",
+        "link": "../First-Year-Project-master/Project.html"
+    },
+    {
+        "name": "spreadsheet project",
+        "img": "projectsScreenshots/spreadsheet.png",
+        "link": "../spreadsheetProject/index.html"
+    },
+    {
+        "name": "NASA API project",
+        "img": "projectsScreenshots/nasaAPI.png",
+        "link": "../NASA-API-Project/index.html"
+    },
+    {
+        "name": "Loading Effect 1",
+        "img": "projectsScreenshots/loadingEffect1.png",
+        "link": "../loadingEffect1/index.html"
+    },
+    {
+        "name": "Responsive CV/Resume",
+        "img": "projectsScreenshots/CVResume.png",
+        "link": "../CVResume/index.html"
+    },
+    {
+        "name": "ABC Internet Site",
+        "img": "projectsScreenshots/abcInternet.png",
+        "link": "../abcInternet/index.html"
+    },
+    {
+        "name": "Coffee Shop",
+        "img": "projectsScreenshots/coffeeWebsite.png",
+        "link": "../coffee/index.html"
+    }
+]

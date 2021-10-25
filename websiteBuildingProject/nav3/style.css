@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans' sans-serif;
+}
+
+.navContainer{
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background-color:rgb(50, 60, 70);
+    padding: 16px 32px;
+    border-bottom: 3px solid rgb(100, 50, 150);
+}
+
+h1{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.hamburger{
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.3s ease;
+}
+
+.hamburger:hover span:nth-child(2){
+    transform: translateX(10px);
+    background-color: rgb(150, 50, 250);
+}
+
+.hamburger.active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2){
+    opacity: 0;
+    /* transform: translate(-4px, 10px) rotate(-45deg);
+    background-color: rgba(150, 0, 150, 0.8); */
+}
+.hamburger.active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.active:hover span{
+    background-color: rgb(150, 50, 250);
+}
+.navMenu{
+    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 -16px;
+    transition: 0.4s ease;
+}
+
+.navMenu a{
+    color: whitesmoke;
+    margin: 0 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+.navMenu a.active, .navMenu a:hover{
+    background-color: rgb(150, 50, 250);
+}
+
+.navMenu.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+.navMenu.active a{
+    width: 80%;
+    text-align: center;
+}
+@media (min-width: 600px){
+    .hamburger{
+        display: none;
+    }
+
+    .navMenu{
+        display: flex;
+    }
+}

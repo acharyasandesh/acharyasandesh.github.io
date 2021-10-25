@@ -1,0 +1,135 @@
+<!--Name: Sandesh Acharya
+Date: April 24, 2020
+Purpose: Final Project-->
+<!-- HTMl version declaration-->
+<!DOCTYPE html>
+<!-- HTML language declaration -->
+<html lang="en">
+	<head>
+		<!-- Meta tag declaring UTF-8 -->
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<!--Use meta tag for description-->
+		<meta name="description" content="This page aims to sell the best albums in the world!">
+		<meta name="keywords" content="online, shopping, album, iwd, canada">
+		<meta name="author" content="Sandesh Acharya">
+
+		<!--Add title tag-->
+		<title>IWD Album Store</title>
+		<link rel="stylesheet" type="text/css" href="project.css">
+
+	</head>
+	<body>
+	<!-- Main tag used after body tag-->
+	<!-- I added my email to the contact us side-->
+	<main>
+		<!--Header tag added-->
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">IWD</span> Album Store</h1>
+				</div>
+				<!-- Nav tag added-->
+				<nav>
+					<ul>
+						<li class="current"><a href="#top" target="_self">Home</a></li>
+						<li><a href="about.html" target="_self">About Us</a></li>
+						<li><a href="contact.html" target="_self">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>	
+		
+		<br/>
+		<!--Write the current time to the page-->
+		<span id="dateArea" style="float: right;">Date/Time</span>
+		
+		<br/>
+	
+		<!--Use currency format numerical amounts in JS-->
+		<span style="float: right;">
+			Currency: 
+			<!--<img class="currencyFlag" src="img/cur/cad.jpg"/> -->
+			<select id="currencySelector" onchange="currencySelection(), displayStoreItems(), calculateCartTotals(), displayAgainCart()">
+				<option selected value="CAD">CAD</option>
+				<option value="JPY">JPY</option>
+				<option value="EUR">EUR</option>
+			</select>
+		</span>
+		
+		<br>
+		<!--Display items available by category-->
+		<fieldset> <legend class="maintext">Store Items</legend>
+			<select id="displayFilter" onchange="displayStoreItems()">
+				<option>All</option>
+				<option>Pop</option>
+				<option>Country</option>
+				<option>Jazz</option>
+			</select>
+			<br/>
+			<br>
+			<div id="inventoryOutput"></div>
+		
+		</fieldset>
+		<br>
+		<!--Display items detail, add items to cart, remove items from cart-->
+		<fieldset> <legend class="maintext">Select Items</legend>
+			<p>
+				Item ID: <input type="text" id="addItemId" />
+				&nbsp;
+				<span id="addIDValidationMessage"></span>
+			</p>
+			<p>
+				Qty: <input type="number" id="addItemQty" />
+				&nbsp;
+				<span id="addQtyValidationMessage"></span>
+			</p>
+			<p>
+				<input class="button_1" type="button" value="Item Details" onclick="displayItemDetails()" />
+				<input class="button_1" type="button" value="Add Item" onclick="displayCartItems(), validation(), displayStoreItems(), calculateCartTotals()"/>
+				<input class="button_1" type="button" value="Remove Item" onclick="removeFromCart()"/>
+			</p>
+		</fieldset>
+		<br>
+		
+		<!--Detail order pricing information-->
+		<fieldset> <legend class="maintext">Your Cart</legend>
+			<span><strong>| ID | Price | Qty | Subtotal |</strong></span>
+			<br>
+			<div id="cartOutput">No Items in Cart, Add Items to Cart</div>
+			<br>
+			<div id="cartCheckout"></div>
+		</fieldset>
+		<br>
+		
+		<!--Submit reviews for items-->
+		<fieldset> <legend class="maintext">Review an Item</legend>
+			<p>Product ID: <input type="text" id="reviewId" />&nbsp;<span id="reviewIdMsg"></span></p>
+			<p>Review: <input type="text" id="reviewDesc" size="40"/></p>
+			<p><input class="button_1" type="button" value="Review" onclick="reviewItem()"/></p>
+		</fieldset>
+		
+		<!--Add the field for user if they want to subcribe by mail-->
+		<section id="newletter">
+			<div class="container">
+				<h1>Subcribe To Our New Music Album</h1>
+				
+				<form>
+					<input type="email" placeholder="Enter Your Email...">
+					<button type="sumbmit" class="button_1">Subscribe</button>
+				</form>
+			</div>
+		</section>
+		
+		<br/>
+		<br/>
+		
+	</main>
+	<!--Footer tag added-->
+	<footer>IWD Album Store, Copyright &copy; Sandesh Acharya</footer>
+	<script src="project.js"></script>
+		
+	</body>
+</html>

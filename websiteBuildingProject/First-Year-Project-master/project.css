@@ -1,0 +1,262 @@
+/*--
+    Name: Sandesh Acharya
+    Course: IWD - Internet Applications And Web Development
+    Student ID: 0980453
+*/
+
+/* Reference: Googlefont.com */
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+/* Display the navigate, dropdownbox by block */
+nav, section {
+  display: block;
+}
+
+/* Add body background, repeat the image on the background
+Reference: www.pexels.com */
+body {
+    background-image: url("album/background.jpeg");
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-repeat: round;
+ }
+ 
+
+ /* Add the container in the header of the web page to make logo, nav tags. Make responsive by set 100% */
+ .container {
+   width: 100%;
+   margin: auto;
+   overflow: hidden;
+ }
+
+ /* Set the minumum width for store items, cart, and review to be 70% */
+ fieldset { min-width: 70%; }
+
+/* Set the table to be 100% of the container, make it 1 line */
+ table {
+   width: 100%;
+   border-collapse: collapse;
+ }
+
+ /* Set the header of the web page background, the size and color of the text */
+ header {
+    background-image: url("album/msic.jpeg");
+    color:#000000;
+    padding-top: 30px;
+    min-height: 70px;
+ }
+
+ /* Change the home, about us and contact us text on header, make it to auto uppercase */
+ header a {
+    color:#000000;
+    text-transform: uppercase;
+    font-size: 16px;
+ }
+
+/* Modify the 3 header, make it appear inline */
+ header ul {
+    margin: 0;
+    padding: 0;
+ }
+
+ header li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+ }
+
+ /* Set the position on left and the font for logo of the shop */
+ header #branding {
+   float:left;
+ }
+
+ header #branding h1 {
+   margin: 0;
+   font-family: 'Anaheim', sans-serif;
+ }
+/* Set position of the 3 link to the right */
+ header nav{
+   float:right;
+   margin-top: 10px;
+ }
+
+ /* Highlight the home and the IWD to make it contrast */
+ header .highlight, header .current a {
+   color:#e8491d;
+   font-weight:bold;
+ }
+/* Make the 3 link turn to white color when user move mouse over */
+ header a:hover {
+  color:#cccccc;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Modify the table font, set it 1 line and responsive */
+ #inventoryOutput {
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+ }
+
+ #inventoryOutput td, #customers th {
+ border: 1px solid #ddd;
+ padding: 8px;
+ }
+
+ /* Make the even number of the row different color and different color when user move mouse over so that they know what row they are in*/
+ #inventoryOutput tr:nth-child(even){background-color: #f2f2f2;}
+
+ #inventoryOutput tr:hover {background-color: #ddd;}
+
+ #inventoryOutput th {
+ padding-top: 12px;
+ padding-bottom: 12px;
+ text-align: left;
+ background-color: rgb(33, 160, 224);
+ color: white;
+ }
+
+/* Display all the image by lock */
+ img {
+   display: block;
+ }
+
+ /* Display all the text in the table with font and make it center */
+ .maintext {
+  text-align: center;
+  font-family: 'Megrim', cursive;
+  font-size: 30px;
+ }
+
+/* Change the filter dropdown box */
+#displayFilter{
+  font-size: 13px;
+  padding: 10px 8px 10px 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Modify the main content of web page */
+main {
+  max-width: 1300px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Change the footer, make it center of the page at the bottom */
+footer {
+  padding:20px;
+  margin-top:20px;
+  color:#000000;
+  background-color: inherit;
+  text-align: center;
+}
+
+/* Change all the button of the web page */
+.button_1 {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+/* Change the button color when move mouse over */
+.button_1:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+/* Change the button size when user click */
+.button_1:active {
+	position:relative;
+	top:1px;
+}
+
+/* Set the image size, the transition when user mose mouse */
+img {
+  height: 150px;
+  width: 150px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+/* Make the image larger when move mouse over */
+img:hover {
+  width: 170px;
+  height: 170px;
+}
+
+/* Media query for screen from 375px to 768px */
+@media only screen and (max-width: 768px) {
+  header #branding, header nav, header nav li{
+    float: none;
+    text-align: center;
+    width:100%;
+  }
+
+  header {
+    padding-bottom:20px;
+  }
+
+  table, thead, tbody, th, td, tr { 
+		display: block; 
+  }
+  	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		
+		position: absolute;
+		
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+  }
+
+  footer {
+    clear: both;
+  }
+}
+
+/* media query from 0px to 375 px*/
+@media only screen and (max-width: 375px) {
+table {
+  width: 300px;
+  height: 300px;
+  table-layout: fixed;
+  overflow-x: scroll;
+}
+}

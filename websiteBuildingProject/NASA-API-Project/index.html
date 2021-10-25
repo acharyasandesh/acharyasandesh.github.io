@@ -1,0 +1,267 @@
+<!--
+    Name: Sandesh Acharya
+    Course: IWD - Internet Applications And Web Development
+    Student ID: 0980453
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="nasa.css">
+    <title>Nasa</title>
+</head>
+<body>
+    <!--Some div for css-->
+    <div class="dateForm">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id='title'>
+
+        <!-- Add form and div for user to input the date as well as to output the result to the screen-->
+        Outer space on this day
+        <br>
+        From:(MM-dd-yyyy)
+        <input id="fromDate" type="date" onChange="dateChange();">
+        
+        To:(MM-dd-yyyy)
+        <input id="toDate" type="date" onChange="dateChange();">
+        
+        <br>
+
+
+        <div class="button" id="button-3">
+            <div id="circle"></div>
+            <a href="#dropdownList" onclick="getdate();">Get</a>
+            
+          </div>
+        
+        <br>
+        
+        <select id="dropdownList" onChange="update();">
+            <option value="-1" disabled>Please select...</option>
+        </select>
+
+
+        <br>
+        <div id="outputError"></div>
+        <div id="outputName"></div>
+        <img id="outputImage"></img>
+        <iframe id="outputVideo" frameborder="0" width="560" height="315" allowfullscreen></iframe>
+        <div id="outputExplanation" class="text"></div>
+        <br><br>
+        <div id="outputCopyright"></div>
+    </div>
+
+    <script>
+
+        // Sandesh Acharya
+        console.log("This Project was created by Sandesh Acharya during IWD course 20/21 at Fanshawe College");
+        // Project #01
+
+        // My API key from the website: RzSKcBd7weOoqQIenyr3dHqOppyZY91kIN0ylc3P in Question 1
+        // Use APOD API for this assignment in Question 2
+
+        var nasaData = {};
+        // Create a JS array to store the copy of data per AJAX call in Question 4
+        var nasaArray = [];
+
+        // I add the date variable to the onchange, so whenever user change the date, it will change the variable to true, and when it's true, run the ajax call. If the date is still the same then nothing will happen in Question 6 
+        var date = false;
+
+        function dateChange()
+        {
+            date = true;
+        }
+        
+        // If the date is changed, and if all the validation is passed then get the date and run the AJAX Call to get the data
+        function getdate()
+        {
+            if (validation())
+            {
+                if (date == true)
+                {
+                    var startDate = document.getElementById("fromDate").value;
+                    var endDate = document.getElementById("toDate").value;
+                    ajaxCall(startDate, endDate);
+                }
+            }
+        }
+
+        // Call AJAX function
+        function ajaxCall(startDate, endDate) {
+            // Create a new connection
+            // Javascript object matching the API Http Request Data in Question 3
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function()
+            {
+                // Request a ready state of done and load
+                if (request.readyState === 4 && request.status === 200)
+                {
+                    nasaArray = JSON.parse(request.responseText);
+                    // When finish achieving the data, output the data to the dropdown list
+                    dropdownList();
+                    // When the call is done then set the date to false again
+                    date = false;
+                }
+                // Output to the user if the server return error
+                else if (request.readyState === 4 && request.status === 500)
+                {
+                    document.getElementById("outputError").innerHTML = "Sever error. Please try again!";
+                    date = false;
+                }
+
+            }
+            // Choose the method and connect to the url
+            request.open("GET", "https://api.nasa.gov/planetary/apod?api_key=RzSKcBd7weOoqQIenyr3dHqOppyZY91kIN0ylc3P" + "&start_date=" + startDate + "&end_date=" + endDate);
+            // Send the request
+            request.send();
+            
+        }
+
+        // Create the generate dropdown list function
+        function dropdownList()
+        {
+            // Make the Please select option, make in unselectable and set it to -1 in Question 7
+            document.getElementById("dropdownList").innerHTML = "<option value='-1' disabled selected>Please select...</option>";
+
+            // Count the number of items in array and pass the name to it 
+            for (var i = 0; i < nasaArray.length; i++)
+            {
+                var element = document.createElement("option");
+                element.innerText = nasaArray[i].title;
+                document.getElementById("dropdownList").appendChild(element);
+            }
+        }
+
+        // Create the update function to display the item whenever user choose the title in dropdown list in Question 8
+        function update() {
+            // Get the index that user chose
+            var x = document.getElementById("dropdownList").selectedIndex;
+
+            // Clear the screen
+            document.getElementById("outputName").innerHTML = "";
+            document.getElementById("outputImage").src = "";
+            document.getElementById("outputVideo").src = "";
+            document.getElementById("outputExplanation").innerHTML = "";
+            document.getElementById("outputCopyright").innerHTML = "";
+
+            // Output all the details of an event
+            document.getElementById("outputName").innerHTML = nasaArray[x - 1].title;
+
+            // Check if the data return is an image or a video then output it the correct div
+            if (nasaArray[x - 1].media_type == "image")
+            {
+                document.getElementById("outputImage").src = nasaArray[x - 1].url;
+            }
+            else
+            {
+                document.getElementById("outputVideo").src = nasaArray[x - 1].url;
+            }
+
+            document.getElementById("outputExplanation").innerHTML = nasaArray[x - 1].explanation;
+            document.getElementById("outputCopyright").innerHTML = "Copyright: " + nasaArray[x - 1].copyright;
+
+            // Check if any item chose has the null data, they change it to unknown in Question 9
+            if (nasaArray[x - 1].title === null)
+            {
+                document.getElementById("outputName").innerHTML = "Unknown";
+            }
+            if (nasaArray[x - 1].hdurl === null)
+            {
+                document.getElementById("outputImage").src = "Unknown";
+            }
+            if (nasaArray[x - 1].title === null)
+            {
+                document.getElementById("outputExplanation").innerHTML = "Unknown";
+            }
+            if (nasaArray[x - 1].copyright == null)
+            {
+                document.getElementById("outputCopyright").innerHTML = "Copyright: Unknown";
+            }
+        }
+
+        // Make the validation for the date
+        function validation() {
+            // Get the date
+            var startDate = document.getElementById("fromDate").value;
+            var endDate = document.getElementById("toDate").value;
+
+            // Change the date to date format, also get the date that user request the data
+            var startDateCheck = new Date(startDate);
+            var endDateCheck = new Date(endDate);
+            var today = new Date();
+            
+            // Get the date, month, year that user chose
+            // +1 for month because the index start from 0
+            // I tried the getDate() method but it output the -4 timezone so i decided to choose the getUTCDate() instead
+            var dateStartDate = startDateCheck.getUTCDate();
+            var monthStartDate = startDateCheck.getUTCMonth() + 1;
+            var yearStartDate = startDateCheck.getUTCFullYear();
+
+            var dateEndDate = endDateCheck.getUTCDate();
+            var monthEndDate = endDateCheck.getUTCMonth() + 1;
+            var yearEndDate = endDateCheck.getUTCFullYear();
+
+            var dateNow = today.getUTCDate();
+            var monthNow = today.getUTCMonth() + 1;
+            var yearNow = today.getUTCFullYear();
+
+            // Get the difference time in millisecond from the date to the BC time
+            var diffDateStart = startDateCheck.getTime();
+            var diffDateEnd = endDateCheck.getTime();
+            // Get the difference
+            var diffDate = diffDateEnd - diffDateStart;
+            // Change the date into day to check if it exceed 1-month worth in Question 5
+            diffDate = diffDate / (1000 * 60 * 60 * 24);
+
+            // Clear the output message
+            var errorOutput = document.getElementById("outputError");
+            errorOutput.innerHTML = "";
+            
+            // Return false so that the ajax call wont work
+            // If all things are right then return true and run the AJAX call
+            
+            // When exceed the 1-month worth
+            if (diffDate > 30)
+            {
+                errorOutput.innerHTML = "Please choose the range within 1 month!";
+                return false;
+            }
+
+            //When the from date is larger than to date
+            else if (yearStartDate > yearEndDate || (yearStartDate == yearEndDate && monthStartDate > monthEndDate) || (yearStartDate == yearEndDate && monthStartDate == monthEndDate && dateStartDate > dateEndDate))
+            {
+                errorOutput.innerHTML = "Start date must be smaller than end date! Please try again!";
+                return false;
+            }
+
+            // The data is from 16 June 1995 but 3 days after that doesnt have data so i only return true for 16 June 1995
+            else if (yearStartDate == 1995 && monthStartDate == 6 && dateStartDate == 16 && yearEndDate == 1995 && monthEndDate == 6 && dateEndDate == 16)
+            {
+                return true;
+            }
+
+            // If user choose the data before 20 June 1995
+            else if (yearStartDate < 1995 || (yearStartDate == 1995 && monthStartDate < 6) || (yearStartDate == 1995 && monthStartDate == 6 && dateStartDate < 20))
+            {
+                errorOutput.innerHTML = "You can only see 16th June 1995 and from 20th June 1995 forward!";
+                return false;
+            }
+            
+            // If user choose the date larger than the time they request
+            else if (yearEndDate > yearNow || (yearEndDate == yearNow && monthEndDate > monthNow) || (yearEndDate == yearNow && monthEndDate == monthNow && dateEndDate > dateNow))
+            {
+                errorOutput.innerHTML = "You can not see the day in future. Please try again!";
+                return false;
+            }
+
+            // Return true if everything is true
+            return true;
+        }
+        
+    </script>
+</body>
+</html>

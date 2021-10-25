@@ -1,0 +1,13 @@
+h1{
+    position: absolute;
+    top: 100px;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 50px;
+    border:darkgoldenrod 5px;
+    border-radius: 20%;
+}
+
+.hidePreLoader{
+    display: none;
+}
