@@ -273,6 +273,9 @@ body{
     align-items: center;
     justify-content: center;
 }
+.projectButtons a:nth-child(2){
+    margin-left: 3px;
+}
 /* project section end */
 
 /*BLOGS SECTION-========================*/
