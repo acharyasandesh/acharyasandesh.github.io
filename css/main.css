@@ -1,4 +1,9 @@
 @import url(fontsColors.css);
+body{
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
 /* HOME SECTION-========================*/
 .home{
     display: flex;
@@ -262,6 +267,12 @@
 .project-container .btn.projects{
     margin-top: 50px;
 }
+
+.projectButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* project section end */
 
 /*BLOGS SECTION-========================*/
@@ -378,16 +389,6 @@
 .footer span a:hover{
     color: var(--colorF9);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
