@@ -15,7 +15,7 @@
         "imgCode": "",
         "webpage": "websiteBuildingProject/NASA-API-Project/index.html",
         "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
-        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/NASA-API-Project"
     },
     {
         "name": "Document Management",
@@ -24,7 +24,7 @@
         "imgCode": "",
         "webpage": "https://sandeshdocumentmanagement.000webhostapp.com",
         "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
-        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+        "gitLink":"https://github.com/acharyasandesh/phpDocumentManagementUpdate"
     },
     {
         "name": "First Year Project",
@@ -33,7 +33,7 @@
         "imgCode": "",
         "webpage": "websiteBuildingProject/First-Year-Project-master/Project.html",
         "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
-        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/First-Year-Project-master"
     },
     {
         "name": "Wordpress site using Divi Builder",
@@ -42,7 +42,7 @@
         "imgCode": "",
         "webpage": "http://hotelsa.ml/",
         "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
-        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+        "gitLink":"#"
     },
     {
         "name": "Adventure/Trekking Website",
@@ -51,7 +51,7 @@
         "imgCode": "",
         "webpage": "https://3sistersadventuretrek.com/",
         "imgLink":"",
-        "gitLink":""
+        "gitLink":"#"
     },
     {
         "name": "Internet/Business Site",
@@ -60,7 +60,7 @@
         "imgCode": "",
         "webpage": "https://acharyasandesh.github.io/websiteBuildingProject/abcInternet/index.html",
         "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
-        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/abcInternet"
     },
     {
         "name": "Sambodhan News",
@@ -69,7 +69,7 @@
         "imgCode": "",
         "webpage": "http://sambodhannews.com/",
         "imgLink":"",
-        "gitLink":""
+        "gitLink":"#"
     },
     {
         "name": "Movie Lists using API",
@@ -78,7 +78,7 @@
         "imgCode": "",
         "webpage": "websiteBuildingProject/moviesSite/index.html",
         "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
-        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/moviesSite"
     },
     {
         "name": "Food Zone Pokhara",
@@ -87,7 +87,7 @@
         "imgCode": "",
         "webpage": "https://foodzonepokhara.com/",
         "imgLink":"",
-        "gitLink":""
+        "gitLink":"#"
     },
     {
         "name": "Color Flipper Project",
@@ -96,6 +96,6 @@
         "imgCode": "",
         "webpage": "websiteBuildingProject/colorFlipper/index.html",
         "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
-        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/colorFlipper"
     }
 ]
