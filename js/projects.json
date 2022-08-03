@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Coffee Shop",
+        "info": "This is a responsive coffee shop website using JS, HTML and CSS",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "websiteBuildingProject/Coffee/index.html",
+        "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+    },
+    {
+        "name": "NASA API Project",
+        "info": "In this project we can get data using NASA provided API",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "websiteBuildingProject/NASA-API-Project/index.html",
+        "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+    },
+    {
+        "name": "Document Management",
+        "info": "Document management system using vanilla PHP. Different, security measures are implemented against security threat such as XSS, CSRF and SQL injection...",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "https://sandeshdocumentmanagement.000webhostapp.com",
+        "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+    },
+    {
+        "name": "First Year Project",
+        "info": "This was created by me for my first semester project at Fanshawe College. We can change price according to different currency, add item to cart, find total price, delete item and more...",
+        "imgWeb": "/img/img1.jpg",
+        "imgCode": "/img/img1.jpg",
+        "webpage": "websiteBuildingProject/First-Year-Project-master/Project.html",
+        "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+    },
+    {
+        "name": "Wordpress site using Divi Builder",
+        "info": "Responsive Hotel Website Built from scratch using Divi plus",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "http://hotelsa.ml/",
+        "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+    },
+    {
+        "name": "Adventure/Trekking Website",
+        "info": "Website developed for Trekking organizer using HTML, CSS, and JS for client at WebSoftNepal",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "https://3sistersadventuretrek.com/",
+        "imgLink":"",
+        "gitLink":""
+    },
+    {
+        "name": "Internet/Business Site",
+        "info": "This is non responsive, just worked on designing part. Built using HTML, CSS and javascript",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "https://acharyasandesh.github.io/websiteBuildingProject/abcInternet/index.html",
+        "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+    },
+    {
+        "name": "Sambodhan News",
+        "info": "Responsive Media Site developed using HTML, CSS and JS. Also conneted it to database using SQL, for client at WebSoftNepal",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "http://sambodhannews.com/",
+        "imgLink":"",
+        "gitLink":""
+    },
+    {
+        "name": "Movie Lists using API",
+        "info": "Using themoviedb API, movies are listed in the page. Different colors are set up for ratings depending on how good it is. Search feature is implemented as well.",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "websiteBuildingProject/moviesSite/index.html",
+        "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+    },
+    {
+        "name": "Food Zone Pokhara",
+        "info": "Developed using HTML, CSS and JS for the client at WebSoftNepal. Worked on front-end, Designed Logo and banners as well. This is restaurant site where people can order food.",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "https://foodzonepokhara.com/",
+        "imgLink":"",
+        "gitLink":""
+    },
+    {
+        "name": "Color Flipper Project",
+        "info": "Choose Hex or simple color for your project. This site can make you work easier.",
+        "imgWeb": "/img/img2.jpg",
+        "imgCode": "/img/img2.jpg",
+        "webpage": "websiteBuildingProject/colorFlipper/index.html",
+        "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
+        "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/Coffee"
+    }
+]
