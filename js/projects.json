@@ -82,7 +82,7 @@
     },
     {
         "name": "God Fathers Pizzeria",
-        "info": "Developed using HTML, CSS, JS, JQuery, PHP for the client at WebSoftNepal. Worked on front-end, Designed Logo and banners as well. Also conneted it to database using SQL, for client at WebSoftNepal. AJAX used to make website fast and dynamic. This is pizza restaurant site where people can order food. Understood some basic fundamentals of Larvel Framework during the project.",
+        "info": "Developed using HTML, CSS, JS, JQuery, PHP for the client at WebSoftNepal. Worked on front-end, Designed Logo and banners as well. Also conneted it to database using SQL. AJAX was used to make website fast and dynamic. This is pizza restaurant site where people can order food. Understood some basic fundamentals of Larvel Framework during the project with Senior Developers.",
         "imgWeb": "img/img12.jpg",
         "imgCode": "",
         "webpage": "http://godfatherspizzeria.com",
@@ -97,5 +97,14 @@
         "webpage": "websiteBuildingProject/colorFlipper/index.html",
         "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
         "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/colorFlipper"
+    },
+    {
+        "name": "Sport Site using Wordpress",
+        "info": "Responsive site developed using Wordpress TheGem theme. This is a sport club's website made for client at WebSoftNepal. Met with client virtually, discussed his expectation of website, presented him some layouts and ideas using mockups. Implemented different SEO measures to boost rankings in search results. Beside custom html, css codes, worked on designing part as well.",
+        "imgWeb": "img/img14.jpg",
+        "imgCode": "",
+        "webpage": "https://pgsportsclub.com.my",
+        "imgLink":"#",
+        "gitLink":"#"
     }
 ]
