@@ -46,7 +46,7 @@
     },
     {
         "name": "Adventure/Trekking Website",
-        "info": "Website developed for Trekking organizer using HTML, CSS, and JS for client at WebSoftNepal",
+        "info": "Website developed for Trekking organizer using HTML, CSS, JS, JQuery for client at WebSoftNepal. Sent the code filed to senior developers  ",
         "imgWeb": "img/img10.jpg",
         "imgCode": "",
         "webpage": "https://3sistersadventuretrek.com/",
@@ -63,11 +63,11 @@
         "gitLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/tree/main/websiteBuildingProject/abcInternet"
     },
     {
-        "name": "foodzonepokhara/",
-        "info": "Responsive Food ordering Site developed using HTML, CSS and JS. Also conneted it to database using SQL.",
-        "imgWeb": "img/img11.jpg",
+        "name": "Site for Consultancy",
+        "info": "Responsive Wordpress site built for client at WebSoftNepal using Lead Engine Theme. Edited themes with custom html, css, javascript and php codes.",
+        "imgWeb": "img/img13.jpg",
         "imgCode": "",
-        "webpage": "https://foodzonepokhara.com//",
+        "webpage": "https://miracle.edu.np",
         "imgLink":"",
         "gitLink":"#"
     },
