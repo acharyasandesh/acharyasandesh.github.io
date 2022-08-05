@@ -82,7 +82,7 @@
     },
     {
         "name": "God Fathers Pizzeria",
-        "info": "Developed using HTML, CSS, JS, JQuery, PHP for the client at WebSoftNepal. Worked on front-end, Designed Logo and banners as well. Also conneted it to database using SQL. AJAX was used to make website fast and dynamic. This is pizza restaurant site where people can order food. Understood some basic fundamentals of Larvel Framework during the project with Senior Developers.",
+        "info": "Developed using HTML, CSS, JS, JQuery, PHP for the client at WebSoftNepal. Worked on front-end, Designed Logo and banners. Also conneted it to database using SQL. AJAX was used to make website fast and dynamic. Understood some basic fundamentals of Larvel Framework during the project with Senior Developers",
         "imgWeb": "img/img12.jpg",
         "imgCode": "",
         "webpage": "http://godfatherspizzeria.com",
