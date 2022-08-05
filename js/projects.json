@@ -46,7 +46,7 @@
     },
     {
         "name": "Adventure/Trekking",
-        "info": "Website developed for Trekking organizer using HTML, CSS, Bootstrap, JS, JQuery, PHP for client at WebSoftNepal. Met with the clients virtually to discuss about the project development and expectations at different stages. Helped understand basic Larvel fundamentals",
+        "info": "Website developed for Trekking organizer using HTML, CSS, Bootstrap, JS, JQuery, PHP for client at WebSoftNepal. Met with the clients virtually to discuss about the project development and expectations at different stages. Helped understand basic Laravel fundamentals",
         "imgWeb": "img/img10.jpg",
         "imgCode": "",
         "webpage": "https://3sistersadventuretrek.com/",
@@ -82,7 +82,7 @@
     },
     {
         "name": "God Fathers Pizzeria",
-        "info": "Using HTML, CSS, JS, JQuery, AJAX, PHP for client at WebSoftNepal. Designed Logo, banners, also conneted it to database using SQL. Understood some basic fundamentals of Larvel Framework during the project with Senior Developers",
+        "info": "Using HTML, CSS, JS, JQuery, AJAX, PHP for client at WebSoftNepal. Designed Logo, banners, also conneted it to database using SQL. Understood some basic fundamentals of Laravel Framework during the project with Senior Developers",
         "imgWeb": "img/img12.jpg",
         "imgCode": "",
         "webpage": "http://godfatherspizzeria.com",
