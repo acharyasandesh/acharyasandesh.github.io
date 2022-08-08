@@ -22,7 +22,7 @@
         "info": "Document management system using vanilla PHP. Different, security measures are implemented against security threat such as XSS, CSRF and SQL injection...",
         "imgWeb": "img/img3.jpg",
         "imgCode": "",
-        "webpage": "https://sandeshdocumentmanagement.000webhostapp.com",
+        "webpage": "http://sandeshdocumentmanagement.epizy.com",
         "imgLink":"https://github.com/acharyasandesh/acharyasandesh.github.io/blob/main/websiteBuildingProject/Coffee/img/codePic.jpg",
         "gitLink":"https://github.com/acharyasandesh/phpDocumentManagementUpdate"
     },
