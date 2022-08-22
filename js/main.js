@@ -47,10 +47,11 @@ function callAjax(){
     var xhr = new XMLHttpRequest();
 
     xhr.open('GET', 'js/projects.json', false);
-    xhr.onreadystatechange = function(){
+    xhr.onload = function(){
         data = JSON.parse(xhr.responseText);
     }
     xhr.send();
+    xhr.onerror = console.log("Error....");
 }
 
 function addProjectElement(data){
