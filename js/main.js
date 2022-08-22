@@ -48,7 +48,9 @@ function callAjax(){
 
     xhr.open('GET', 'js/projects.json', false);
     xhr.onload = function(){
-        data = JSON.parse(xhr.responseText);
+        if(this.status == 400){
+            data = JSON.parse(xhr.responseText);
+        }
     }
     xhr.send();
     xhr.onerror = console.log("Error....");
